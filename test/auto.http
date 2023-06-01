@@ -1,0 +1,44 @@
+@url=http://localhost:3000/auto
+
+###
+
+GET {{url}}
+
+###
+
+GET {{url}}/1
+
+###
+
+POST {{url}}
+Content-Type: application/json
+
+{
+    "marco": "Ford",
+    "modello": "Focus",
+    "anno": 2016
+}
+
+###
+
+PUT {{url}}/1
+Content-Type: application/json
+
+{
+    "marco": "Ford",
+    "modello": "Focus",
+    "anno": 2016
+}
+
+###
+
+PATCH {{url}}/1
+Content-Type: application/json
+
+{
+    "anno": 2017
+}
+
+###
+
+DELETE {{url}}/1

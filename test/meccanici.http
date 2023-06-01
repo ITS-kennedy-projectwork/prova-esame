@@ -1,0 +1,44 @@
+@url=http://localhost:3000/meccanici
+
+###
+
+GET {{url}}
+
+###
+
+GET {{url}}/2
+
+###
+
+POST {{url}}
+Content-Type: application/json
+
+{
+    "nome": "Pippo",
+    "cognome": "Pluto",
+    "eta": 50
+}
+
+###
+
+PUT {{url}}/8
+Content-Type: application/json
+
+{
+    "nome": "Topolino",
+    "cognome": "Topolini",
+    "eta": 48
+}
+
+###
+
+PATCH {{url}}/8
+Content-Type: application/json
+
+{
+    "eta": 52
+}
+
+###
+
+DELETE {{url}}/1
